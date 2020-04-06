@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/White"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:id="@+id/layout_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:weightSum="8">
+
+        <TextView
+            android:id="@+id/tv_filter_all"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+
+            android:layout_marginStart="7dp"
+            android:layout_weight="1"
+            android:gravity="top|center_horizontal"
+            android:padding="5dp"
+            android:tag=""
+            android:text="@string/all"
+            android:textColor="@color/White"
+            android:textSize="18sp"
+            android:lines="1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_filter_veg"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:lines="1"
+
+            android:layout_weight="1"
+            android:gravity="top|center_horizontal"
+            android:padding="5dp"
+            android:tag="Veg"
+            android:text="@string/veg"
+            android:textColor="@color/White"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_filter_non_veg"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:lines="1"
+
+            android:layout_weight="1"
+            android:gravity="top|center_horizontal"
+            android:padding="5dp"
+            android:tag="Non-Veg"
+            android:text="@string/non_veg"
+            android:textColor="@color/White"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_filter_chef"
+            android:layout_width="108dp"
+            android:layout_height="match_parent"
+            android:lines="1"
+            android:layout_weight="1"
+            android:gravity="top|center_horizontal"
+            android:padding="5dp"
+            android:tag="Chef"
+            android:text="@string/chef"
+            android:textColor="@color/White"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_filter_breakfast"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:lines="1"
+            android:layout_weight="1"
+            android:gravity="top|center_horizontal"
+            android:padding="5dp"
+            android:tag="Breakfast"
+            android:text="@string/breakfast"
+            android:textColor="@color/White"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_filter_lunch"
+            android:layout_width="107dp"
+            android:layout_height="match_parent"
+            android:lines="1"
+            android:layout_weight="1"
+            android:gravity="top|center_horizontal"
+            android:padding="5dp"
+            android:tag="Lunch"
+            android:text="@string/lunch"
+            android:textColor="@color/White"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_filter_snacks"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:lines="1"
+            android:layout_weight="1"
+            android:gravity="top|center_horizontal"
+            android:padding="5dp"
+            android:tag="Others"
+            android:text="@string/snacks"
+            android:textColor="@color/White"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_filter_dinner"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:lines="1"
+            android:layout_weight="1"
+            android:gravity="top|center_horizontal"
+            android:padding="5dp"
+            android:tag="Dinner"
+            android:text="@string/dinner"
+            android:textColor="@color/White"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</HorizontalScrollView>

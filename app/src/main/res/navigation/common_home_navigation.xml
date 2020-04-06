@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/buyer_home_navigation"
+    app:startDestination="@id/settingsFragment">
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.nextdoormvvm.buyer.ui.home.settings.SettingsFragment"
+        android:label="Order History"
+        tools:layout="@layout/settings_fragment" />
+    <fragment
+        android:id="@+id/userStatusFragment"
+        android:name="com.example.nextdoormvvm.common.ui.userStatus.UserStatusFragment"
+        android:label="User Status"
+        tools:layout="@layout/user_status_fragment" />
+</navigation>

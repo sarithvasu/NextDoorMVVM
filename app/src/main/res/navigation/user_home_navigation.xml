@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_home_navigation"
+    app:startDestination="@id/userInfoFragment">
+
+    <fragment
+        android:id="@+id/userInfoFragment"
+        android:name="com.example.nextdoormvvm.user.ui.userInfo.UserInfoFragment"
+        android:label="User Info"
+        tools:layout="@layout/user_info_fragment" />
+    <fragment
+        android:id="@+id/registerBuyerFragment"
+        android:name="com.example.nextdoormvvm.user.ui.registerbuyer.RegisterBuyerFragment"
+        android:label="Register Buyer"
+        tools:layout="@layout/register_buyer_fragment" />
+    <fragment
+        android:id="@+id/updateProfileFragment"
+        android:name="com.example.nextdoormvvm.user.ui.updateprofile.UpdateProfileFragment"
+        android:label="Update Profile"
+        tools:layout="@layout/update_profile_fragment" />
+
+    <fragment
+        android:id="@+id/changeAddressFragment"
+        android:name="com.example.nextdoormvvm.user.ui.changeaddress.UpdateAddressFragment"
+        android:label="Change Address"
+        tools:layout="@layout/update_address_fragment"/>
+
+</navigation>

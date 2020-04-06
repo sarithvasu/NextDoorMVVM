@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/dashboardFragment"
+        android:icon="@drawable/ic_today"
+        android:title="Dashboard"/>
+    <item
+        android:id="@+id/menuFragment"
+        android:icon="@drawable/ic_calendar_week"
+        android:title="Menu"/>
+    <item
+        android:id="@+id/accountFragment"
+        android:icon="@drawable/ic_settings"
+        android:title="Account"/>
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_today"
+        android:title="Profile"/>
+</menu>

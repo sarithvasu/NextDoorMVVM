@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/userInfoFragment"
+        android:icon="@drawable/ic_today"
+        android:title="User Info"/>
+    <item
+        android:id="@+id/registerBuyerFragment"
+        android:icon="@drawable/ic_calendar_week"
+        android:title="Register Buyer"/>
+    <item
+        android:id="@+id/updateProfileFragment"
+        android:icon="@drawable/ic_settings"
+        android:title="Update Profile"/>
+
+    <item
+        android:id="@+id/changeAddressFragment"
+        android:icon="@drawable/ic_today"
+        android:title="change Address"/>
+
+</menu>

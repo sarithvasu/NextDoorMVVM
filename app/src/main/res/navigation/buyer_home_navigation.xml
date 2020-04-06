@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/buyer_home_navigation"
+    app:startDestination="@id/ongoingDishesFragment">
+
+    <fragment
+        android:id="@+id/ongoingDishesFragment"
+        android:name="com.example.nextdoormvvm.buyer.ui.home.ongoing.OngoingDishesFragment"
+        android:label="Ongoing Dishes"
+        tools:layout="@layout/ongoing_dishes_fragment">
+
+        <argument android:name="homeFeed"
+            android:defaultValue="None"/>
+
+        <action
+            android:id="@+id/action_ongoingDishesFragment_to_chefListFragment"
+            app:destination="@id/chefListFragment" />
+
+        <action
+            android:id="@+id/action_ongoingDishesFragment_to_checkOutFragment"
+            app:destination="@id/checkOutFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/tomorrowsDishesFragment"
+        android:name="com.example.nextdoormvvm.buyer.ui.home.tomorow.TomorrowsDishesFragment"
+        android:label="Tomorrow's Dishes"
+        tools:layout="@layout/tomorrows_dishes_fragment">
+        <action
+            android:id="@+id/action_tomorrowsDishesFragment_to_checkOutFragment"
+            app:destination="@id/checkOutFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/requestDishFragment"
+        android:name="com.example.nextdoormvvm.buyer.ui.home.request.RequestDishListFragment"
+        android:label="Request Dish"
+        tools:layout="@layout/request_dish_fragment"/>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.nextdoormvvm.buyer.ui.home.settings.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/settings_fragment" >
+        <action
+            android:id="@+id/action_settingsFragment_to_orderHistoryFragment"
+            app:destination="@id/orderHistoryFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/timeSlotFragment"
+        android:name="com.example.nextdoormvvm.buyer.ui.home.timeslot.TimeSlotFragment"
+        android:label="TimeSlotFragment" />
+
+
+    <fragment
+        android:id="@+id/chefListFragment"
+        android:name="com.example.nextdoormvvm.buyer.ui.chef.cheflist.ChefListFragment"
+        android:label="chef_list_fragment"
+        tools:layout="@layout/chef_list_fragment" />
+    <fragment
+        android:id="@+id/checkOutFragment"
+        android:name="com.example.nextdoormvvm.buyer.ui.home.checkout.CheckOutFragment"
+        android:label="check_out_fragment"
+        tools:layout="@layout/check_out_fragment" >
+        <action
+            android:id="@+id/action_checkOutFragment_to_orderConfirmationFragment"
+            app:destination="@id/orderConfirmationFragment"
+            app:popUpTo="@id/checkOutFragment"
+            app:popUpToInclusive="true"
+            app:launchSingleTop="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderConfirmationFragment"
+        android:name="com.example.nextdoormvvm.buyer.ui.home.orderconfirmation.OrderConfirmationFragment"
+        android:label="order_confirmation_fragment"
+        tools:layout="@layout/order_confirmation_fragment" />
+    <fragment
+        android:id="@+id/makeRequestFragment"
+        android:name="com.example.nextdoormvvm.buyer.ui.home.request.MakeDishRequestFragment"
+        android:label="MakeRequestFragment" >
+        <action
+            android:id="@+id/action_makeRequestFragment_to_orderConfirmationFragment"
+            app:destination="@id/orderConfirmationFragment"
+            app:popUpTo="@id/makeRequestFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/orderHistoryFragment"
+        android:name="com.example.nextdoormvvm.common.ui.orderhistory.OrderHistoryFragment"
+        android:label="OrderHistoryFragment" />
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.example.nextdoormvvm.user.ui.editprofile.EditProfileFragment"
+        android:label="EditProfileFragment" />
+    <fragment
+        android:id="@+id/productDetailFragment"
+        android:name="com.example.nextdoormvvm.buyer.ui.productdetail.ProductDetailFragment"
+        android:label="ProductDetailFragment" />
+
+</navigation>

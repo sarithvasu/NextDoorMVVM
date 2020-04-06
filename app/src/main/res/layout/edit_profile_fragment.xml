@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".activity.EditProfile">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_profile_pic_edit_profile"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/LightGrey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/profile_p_holder" />
+
+        <TextView
+            android:id="@+id/tv_upload_profile_pic_edit_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="@string/edit_image"
+            android:textColor="@color/DarkBlue"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/img_profile_pic_edit_profile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/img_profile_pic_edit_profile"
+            app:layout_constraintVertical_bias="0.366" />
+
+        <TextView
+            android:id="@+id/textView134"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center|start"
+            android:text="@string/full_name_c"
+            android:textColor="@color/Black"
+             android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view12" />
+
+        <TextView
+            android:id="@+id/textView139"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center|start"
+            android:text="@string/email_id"
+            android:textColor="@color/Black"
+             android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView148" />
+
+        <TextView
+            android:id="@+id/textView140"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/mobile_number"
+            android:textColor="@color/Black"
+             android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView139" />
+
+        <EditText
+            android:id="@+id/tv_edit_full_name_edit_profile"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center|right"
+            android:inputType="textPersonName"
+            android:padding="8dp"
+            android:tag="FullName"
+            android:focusable="false"
+            android:textColor="@color/DarkGrey"
+             android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/textView134"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView134"
+            app:layout_constraintTop_toTopOf="@+id/textView134"
+            tools:ignore="LabelFor,RtlHardcoded"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/tv_edit_email_edit_profile"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center|right"
+            android:inputType="textPersonName"
+            android:padding="8dp"
+            android:tag="Email"
+            android:focusable="false"
+          
+            android:textColor="@color/DarkGrey"
+             android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/textView139"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView139"
+            app:layout_constraintTop_toTopOf="@+id/textView139"
+            tools:ignore="LabelFor,RtlHardcoded,TextFields"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/tv_mobile_number_edit_profile"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center|right"
+            android:inputType="phone"
+            android:padding="8dp"
+            android:enabled="false"
+           
+            android:textColor="@color/DarkGrey"
+             android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/textView140"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView140"
+            app:layout_constraintTop_toTopOf="@+id/textView140"
+            tools:ignore="LabelFor,RtlHardcoded"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/tv_verified_edit_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/verified"
+            android:textColor="@color/Green"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_mobile_number_edit_profile"
+            app:layout_constraintStart_toStartOf="@+id/tv_mobile_number_edit_profile"
+            app:layout_constraintTop_toTopOf="@+id/tv_mobile_number_edit_profile"
+            app:layout_constraintVertical_bias="0.583" />
+
+        <TextView
+            android:id="@+id/textView144"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/verified_mobile_number_cannot_be_changed"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView140" />
+
+        <TextView
+            android:id="@+id/textView145"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/apartment_address"
+            android:textColor="@color/SkyBlue"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view41" />
+
+        <TextView
+            android:id="@+id/tv_address_edit_profile"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/border"
+            android:justificationMode="inter_word"
+            android:maxLines="5"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="100dp"
+            android:text="@string/a2_503_provident_welworth_city_doddaballapur_road_marasandra_bisuvanahalli_pin_560065"
+             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView145"
+            tools:targetApi="o" />
+
+        <TextView
+            android:id="@+id/tv_change_address_edit_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="start"
+            android:text="@string/change_address"
+            android:textColor="@android:color/holo_red_light"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_address_edit_profile" />
+
+        <TextView
+            android:id="@+id/textView150"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/change_of_address_require_address_proof_document"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_change_address_edit_profile" />
+
+        <TextView
+            android:id="@+id/tv_save_changes_edit_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/DarkBlue"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/save_changes"
+            android:visibility="gone"
+            android:textColor="@color/White"
+             android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView150" />
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center|start"
+            android:text="@string/flat_number"
+            android:textColor="@color/Black"
+             android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView134" />
+
+        <EditText
+            android:id="@+id/tv_edit_flat_number_edit_profile"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:gravity="center|right"
+            android:inputType="textPersonName"
+            android:padding="8dp"
+            android:tag="FlatNumber"
+            android:focusable="false"
+            android:textColor="@color/DarkGrey"
+             android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/textView42"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView42"
+            app:layout_constraintTop_toTopOf="@+id/textView42"
+            tools:ignore="LabelFor,RtlHardcoded,TextFields"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/textView148"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center|start"
+            android:text="@string/gender"
+            android:textColor="@color/Black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView42" />
+
+        <TextView
+            android:id="@+id/textView102"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+
+            android:gravity="center|start"
+            android:text="@string/about_us"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView107" />
+
+        <EditText
+            android:id="@+id/textInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:focusable="false"
+            android:hint="@string/about_chef"
+            android:orientation="horizontal"
+            android:tag="AboutChef"
+             android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView102"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView102"
+            app:layout_constraintTop_toTopOf="@+id/textView102"
+            android:importantForAutofill="no"
+            tools:ignore="TextFields">
+
+
+        </EditText>
+
+        <View
+            android:id="@+id/view12"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/LightGrey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_profile_pic_edit_profile" />
+
+        <View
+            android:id="@+id/view41"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/LightGrey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+        <EditText
+            android:id="@+id/tv_edit_gender_edit_profile"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:gravity="center|right"
+            android:inputType="textPersonName"
+            android:padding="8dp"
+            android:text="@string/male"
+            android:tag="Gender"
+            android:focusable="false"
+            android:textColor="@color/DarkGrey"
+             android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView148"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView148"
+            app:layout_constraintTop_toTopOf="@+id/textView148"
+            tools:ignore="LabelFor,RtlHardcoded"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/tv_edit_speciality_edit_profile"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center|right"
+            android:inputType="textPersonName"
+            android:padding="8dp"
+            android:text="@string/non_veg"
+            android:focusable="false"
+            android:tag="SpecializedOption"
+            android:textColor="@color/DarkGrey"
+             android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView107"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView107"
+            app:layout_constraintTop_toTopOf="@+id/textView107"
+            app:layout_constraintVertical_bias="1.0"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor,RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/textView107"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center|start"
+            android:text="@string/speciality"
+
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView144" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/buyer_home_navigation"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.nextdoormvvm.seller.ui.dashboard.DashboardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/dashboard_fragment" />
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.nextdoormvvm.seller.ui.dish.dishFeed.DishFeedFragment"
+        android:label="Menu"
+        tools:layout="@layout/menu_fragment" />
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.example.nextdoormvvm.seller.ui.account.AccountFragment"
+        android:label="Account"
+        tools:layout="@layout/account_fragment" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.nextdoormvvm.seller.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/profile_fragment" />
+
+</navigation>

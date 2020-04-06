@@ -1,0 +1,163 @@
+<resources>
+    <string name="app_name">NextDoorMVVM</string>
+
+    <string name="enter_mobile_number">Enter your mobile number</string>
+    <string name="isd_code">+91</string>
+    <string name="by_taping">By tapping NEXT you are agreeing to our</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="next">NEXT</string>
+    <string name="privacy_policy_terms_of_service">Privacy Policy Terms Of Service</string>
+    <string name="we_re_so_happy_you_re_here">We\'re so happy you\'re here</string>
+    <string name="welcome_friend">Welcome friend</string>
+    <string name="verifying_your_phone_number">Verifying your phone number</string>
+    <string name="otp_sent_to">OTP sent to</string>
+    <string name="resend">Resend</string>
+    <string name="verify">VERIFY</string>
+    <string name="did_not_receive_a_code">Didn\'t receive a code?</string>
+    <string name="please_enter_otp">Please enter OTP</string>
+    <string name="search_your_apartment">Search your apartment</string>
+    <string name="state">State:</string>
+    <string name="city">City:</string>
+    <string name="no_apartment_found">No apartment found</string>
+    <string name="add_now">Add now</string>
+    <string name="get_started">Get started</string>
+    <string name="add_apartment">Add Apartment</string>
+    <string name="flat_number">Flat number:</string>
+    <string name="address_proof">Address proof</string>
+    <string name="documents_like_gas_bill_phone_bill">Documents like gas bill, phone bill</string>
+
+    <string name="serving">Serving:</string>
+
+    <string name="availability">Availability:</string>
+    <string name="rating">Rating</string>
+    <string name="sold">Sold</string>
+    <string name="available">Available</string>
+    <string name="something">Some thing went wrong</string>
+    <string name="loading">Loading....</string>
+    <string name="buy">ADD +</string>
+    <string name="ongoing">Ongoing</string>
+    <string name="tomorrows">Tomorrows</string>
+    <string name="customized">Customized</string>
+    <string name="rupees">Rs.</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+
+
+    <string name="fcm_message">From Showmen</string>
+    <string name="default_notification_channel_id">1</string>
+
+    <string name="default_notification_channel_name">default_notification_channel_name</string>
+    <string name="msg_subscribed">msg_subscribed</string>
+    <string name="msg_subscribe_failed">msg_subscribe_failed</string>
+    <string name="msg_token_fmt">msg_token_fmt</string>
+    <string name="APP_KEY">0lwierv4wlsozeh</string>
+    <string name="title_home">Home</string>
+    <string name="title_dishes">Dishes</string>
+    <string name="title_account">Acoount</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_chef">Chef</string>
+
+
+    <string name="request">Request</string>
+    <string name="propic">propic</string>
+    <string name="basic_information">Basic Information</string>
+    <string name="provident_welworth_city">Provident Welworth City</string>
+    <string name="users_in_provident_welworth_city">Users in Provident Welworth City</string>
+    <string name="full_name">Full Name</string>
+    <string name="full_name_c">Full Name:</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="email">Email</string>
+
+    <string name="female">Female</string>
+    <string name="others">Others</string>
+    <string name="register">REGISTER</string>
+    <string name="your_selected_apartment_is">Your selected apartment is</string>
+    <string name="select_gender">Select Gender</string>
+    <string name="private_information">Private Information</string>
+    <string name="sell_home_made_food">Sell Home made Food</string>
+    <string name="buy_home_made_food">Buy Home made food</string>
+    <string name="share_ride">Share ride</string>
+    <string name="profile">Profile</string>
+    <string name="signature_dish">Signature Dish</string>
+    <string name="timings">Timings:</string>
+    <string name="dish_sold">Dish Sold</string>
+    <string name="dish_reviews">Dish Reviews</string>
+    <string name="about">About:</string>
+    <string name="veg">Veg</string>
+    <string name="non_veg">Non-Veg</string>
+    <string name="active_dishes">Active Dishes</string>
+    <string name="all">All</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="lunch">Lunch</string>
+    <string name="snacks">Snacks</string>
+    <string name="dinner">Dinner</string>
+
+    <string name="no_item_found">No Item Found</string>
+    <string name="proceed">PROCEED</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="packing_charges">Packing Charges:</string>
+    <string name="delivery_charges">Delivery Charges:</string>
+    <string name="other_details">Other Details:</string>
+    <string name="item_total">Item Total</string>
+    <string name="total_delivery_charges">Total Delivery Charges</string>
+    <string name="total_packing_charges">Total Packing Charges</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="add_more_items">Add More Items +</string>
+    <string name="bill_details">Bill Details</string>
+    <string name="select_payment_mode">Select Payment Mode:</string>
+    <string name="digital_payment">Digital Payment</string>
+    <string name="g_pay">G-Pay</string>
+    <string name="paytm">Paytm</string>
+    <string name="phone_pe">Phone Pe</string>
+    <string name="cash_on_delivery_keeping_exact_change_is_appricieated">Cash on delivery (Keeping exact change is appricieated)</string>
+    <string name="delivery_details">Delivery details:</string>
+    <string name="edit">Edit</string>
+    <string name="item_details">Item Details</string>
+    <string name="cod">COD</string>
+    <string name="select_delivery">Select delivery:</string>
+    <string name="unit_price">Unit Price:</string>
+    <string name="chef">Chef:</string>
+    <string name="select_packing">Select packing</string>
+    <string name="choose_delivery_date">Choose delivery date</string>
+    <string name="select_delivery_time">Select delivery time</string>
+    <string name="order_total">Order total:</string>
+    <string name="delivery_total">Delivery total:</string>
+    <string name="payment_mode">Payment mode:</string>
+    <string name="packing_total">Packing total:</string>
+    <string name="own_box">Own Box</string>
+    <string name="parcel">Parcel</string>
+    <string name="home_delivery">Home Delivery</string>
+    <string name="self_pick">Self Pick</string>
+    <string name="current_order">Current Order</string>
+    <string name="order_history">Order History</string>
+    <string name="invite_neighbor">Invite Neighbor</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="about_us">About Us</string>
+    <string name="food">Food</string>
+    <string name="rated">Rated</string>
+    <string name="write_review">Write Review</string>
+    <string name="payment">Payment</string>
+    <string name="status">Status</string>
+    <string name="total">Total</string>
+    <string name="other_charges">Other charges</string>
+    <string name="order_id">Order ID:</string>
+    <string name="edit_image">Edit Image</string>
+    <string name="verified">Verified</string>
+    <string name="verified_mobile_number_cannot_be_changed">Verified mobile number cannot be changed</string>
+    <string name="apartment_address">Apartment Address</string>
+    <string name="a2_503_provident_welworth_city_doddaballapur_road_marasandra_bisuvanahalli_pin_560065">A2–503, Provident welworth city, Doddaballapur Road, Marasandra, Bisuvanahalli, PIN: 560065</string>
+    <string name="change_address">Change Address</string>
+    <string name="change_of_address_require_address_proof_document">Change of address require address proof document</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="gender">Gender</string>
+    <string name="email_id">Email ID:</string>
+    <string name="mobile_number">Mobile Number:</string>
+    <string name="about_chef">* About chef</string>
+    <string name="male">Male</string>
+    <string name="speciality">Speciality</string>
+
+</resources>

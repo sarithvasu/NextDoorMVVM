@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+       <ImageView
+           android:id="@+id/img_customer_image_reg"
+           android:layout_width="150dp"
+
+           android:layout_height="150dp"
+           android:layout_marginStart="12dp"
+           android:layout_marginTop="12dp"
+           android:scaleType="centerCrop"
+
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:srcCompat="@drawable/profile_p_holder"
+           android:contentDescription="@string/propic" />
+
+       <TextView
+           android:id="@+id/tv_upload_image_reg"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="12dp"
+           android:layout_marginTop="12dp"
+           android:text="@string/basic_information"
+           android:textColor="@color/SkyBlue"
+           android:textSize="18sp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/img_customer_image_reg" />
+
+       <TextView
+           android:id="@+id/tv_selected_apartment_name_reg"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="12dp"
+           android:layout_marginEnd="12dp"
+           android:text="@string/provident_welworth_city"
+           android:textColor="@color/Orange"
+           android:textSize="14sp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toEndOf="@+id/img_customer_image_reg"
+           app:layout_constraintTop_toBottomOf="@+id/textView71" />
+
+       <TextView
+           android:id="@+id/tv_num_of_users_in_slected_apartment_reg"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="12dp"
+           android:layout_marginTop="20dp"
+           android:layout_marginEnd="12dp"
+           android:background="@color/DarkBlue"
+           android:gravity="center"
+           android:padding="4dp"
+           android:text=""
+           android:textColor="@color/White"
+           android:textSize="16sp"
+           android:textStyle="bold"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toEndOf="@+id/img_customer_image_reg"
+           app:layout_constraintTop_toBottomOf="@+id/tv_selected_apartment_name_reg" />
+
+       <TextView
+           android:id="@+id/textView73"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="12dp"
+           android:layout_marginEnd="12dp"
+           android:background="@color/DarkBlue"
+           android:gravity="center"
+           android:padding="4dp"
+           android:text="@string/users_in_provident_welworth_city"
+           android:textColor="@color/White"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toEndOf="@+id/img_customer_image_reg"
+           app:layout_constraintTop_toBottomOf="@+id/tv_num_of_users_in_slected_apartment_reg" />
+
+       <EditText
+           android:id="@+id/et_full_name_of_customer_reg"
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_marginStart="12dp"
+           android:layout_marginTop="12dp"
+           android:layout_marginEnd="12dp"
+           android:ems="10"
+           android:hint="@string/full_name"
+           android:importantForAutofill="no"
+           android:inputType="textPersonName"
+           android:textSize="18sp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/tv_upload_image_reg" />
+
+       <EditText
+           android:id="@+id/et_flat_no_of_customer_reg"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="12dp"
+           android:layout_marginEnd="12dp"
+           android:ems="10"
+           android:hint="@string/flat_number"
+           android:inputType="textPersonName"
+           android:textSize="18sp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/et_full_name_of_customer_reg"
+           android:importantForAutofill="no" />
+       <TextView
+           android:text="@string/private_information"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/textView76"
+           app:layout_constraintTop_toBottomOf="@+id/et_flat_no_of_customer_reg" android:layout_marginTop="12dp"
+           app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="12dp"
+           android:textColor="@color/SkyBlue" android:textSize="18sp"/>
+
+       <EditText
+           android:id="@+id/et_customer_mobile_num_reg"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="8dp"
+           android:layout_marginTop="12dp"
+           android:layout_marginEnd="12dp"
+
+           android:ems="10"
+           android:hint="@string/phone_number"
+           android:importantForAutofill="no"
+           android:inputType="phone|textNoSuggestions"
+           android:maxLength="10"
+           android:textSize="18sp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/textView76" />
+
+       <EditText
+           android:id="@+id/et_customer_email_reg"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="12dp"
+           android:layout_marginEnd="12dp"
+           android:ems="10"
+           android:hint="@string/email"
+           android:inputType="textEmailAddress"
+           android:textSize="18sp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/et_customer_mobile_num_reg"
+           android:importantForAutofill="no" />
+
+       <RadioGroup
+           android:id="@+id/rg_gender_reg"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="12dp"
+           android:layout_marginTop="12dp"
+           android:layout_marginEnd="12dp"
+           android:orientation="horizontal"
+           android:weightSum="3"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/textView43">
+
+              <RadioButton
+                  android:id="@+id/rb_gender_male_reg"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginEnd="8dp"
+                  android:layout_weight="1"
+                  android:background="@drawable/bg_oval_borderr"
+                  android:button="@android:color/transparent"
+                  android:gravity="center"
+                  android:padding="10dp"
+                  android:text="@string/male"
+                  android:textColor="@color/rb_text_selector"
+                  android:textSize="16sp" />
+
+              <RadioButton
+                  android:id="@+id/rb_gender_female_reg"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginEnd="8dp"
+                  android:layout_weight="1"
+                  android:background="@drawable/bg_oval_borderr"
+                  android:button="@android:color/transparent"
+                  android:gravity="center"
+                  android:padding="10dp"
+                  android:text="@string/female"
+                  android:textColor="@color/rb_text_selector"
+                  android:textSize="16sp" />
+
+              <RadioButton
+                  android:id="@+id/rb_gender_other_reg"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:background="@drawable/bg_oval_borderr"
+                  android:button="@android:color/transparent"
+                  android:gravity="center"
+                  android:padding="10dp"
+                  android:text="@string/others"
+                  android:textColor="@color/rb_text_selector"
+                  android:textSize="16sp" />
+       </RadioGroup>
+
+       <TextView
+           android:text="@string/register"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/tv_reg" app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.0" android:gravity="center" android:textColor="@color/White"
+           android:background="@color/DarkBlue" android:textSize="20sp" android:textStyle="bold"
+           android:padding="10dp"/>
+       <TextView
+           android:text="@string/verify"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/tv_verify_phone_num_reg"
+           android:visibility="invisible"
+           android:textColor="@color/Orange" android:textSize="16sp" android:layout_marginEnd="12dp"
+           app:layout_constraintEnd_toEndOf="@+id/et_customer_mobile_num_reg"
+           android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/et_customer_email_reg"/>
+       <TextView
+           android:text="@string/verify"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/tv_verify_email_reg" android:textSize="16sp"
+           android:textColor="@color/Orange" android:layout_marginEnd="12dp"
+           app:layout_constraintEnd_toEndOf="@+id/et_customer_email_reg"
+           android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="@+id/et_customer_email_reg"/>
+
+       <TextView
+           android:id="@+id/textView71"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="12dp"
+           android:layout_marginEnd="12dp"
+           android:text="@string/your_selected_apartment_is"
+           android:textSize="16sp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toEndOf="@+id/img_customer_image_reg"
+           app:layout_constraintTop_toTopOf="@+id/img_customer_image_reg" />
+
+       <TextView
+           android:id="@+id/textView43"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="12dp"
+           android:layout_marginTop="12dp"
+           android:text="@string/select_gender"
+           android:textColor="@color/SkyBlue"
+           android:textSize="18sp"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/et_customer_email_reg" />
+</androidx.constraintlayout.widget.ConstraintLayout>
