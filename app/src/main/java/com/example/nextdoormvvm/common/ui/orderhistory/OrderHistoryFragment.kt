@@ -15,6 +15,7 @@ import com.example.nextdoormvvm.internal.Preference
 import com.example.nextdoormvvm.internal.ScopedFragment
 import com.example.nextdoormvvm.internal.Utility
 import kotlinx.android.synthetic.main.order_history_fragment.*
+import com.example.nextdoormvvm.common.ui.components.NoItemFound
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
@@ -50,6 +51,12 @@ class OrderHistoryFragment : ScopedFragment() {
             CommonViewModelTypeEnum.OrderHistoryViewModel,
             queryParameterMap
         ) as OrderHistoryViewModel
+
+        // Setup compose view
+        no_item_found_view.setContent {
+            NoItemFound()
+        }
+
         loadOrderHistory()
     }
 
@@ -61,7 +68,7 @@ class OrderHistoryFragment : ScopedFragment() {
             if (mOrderSummery.isNotEmpty())
                 initBasicSetup()
             else
-                no_item_found_layout.visibility = View.VISIBLE
+                no_item_found_view.visibility = View.VISIBLE
 
         })
     }
